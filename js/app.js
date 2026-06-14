@@ -1,33 +1,33 @@
 const products = [
   {
-    id: "ipad-9th-gen-blue",
-    name: "iPad 9th Gen 64GB Wi-Fi",
+    id: "ipad-3rd-gen-blue",
+    name: "iPad Pro 12.9 3rd Gen Wi-Fi",
     category: "iPad",
-    price: 5500,
-    image: "images/products/ipad-blue.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
-    description: "Clean iPad with a bright display, ideal for study, streaming, and daily use.",
-    specs: ["64GB storage", "Wi-Fi model", "Good battery health", "Ready for setup"]
+    price: 8 500,
+    image: "https://images.yaga.co.za/k16hih4boek/ce0080.jpeg?s=1200&c=inside&f=webp",
+    buyUrl: "https://www.yaga.co.za/orieukwu-richard/product/k16hih4boek/buy",
+    description: "iPad Pro 12.9 3rd Gen Wi-Fi Only Charger and Original Apple Pencil included",
+    specs: ["256GB storage", "Wi-Fi model", "Good battery health", "Ready for setup"]
   },
   {
-    id: "iphone-boxed-bundle",
-    name: "iPhone Boxed Bundle",
-    category: "iPhone",
-    price: 9500,
-    image: "images/products/iphone-boxed.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
-    description: "iPhone package with accessories, presented in excellent condition.",
-    specs: ["Box included", "Accessories included", "Tested device", "Ready to use"]
+    id: "ipad-3rd-gen-black",
+    name: "iPad Pro 12.9",
+    category: "iPad",
+    price: 6 900,
+    image: "https://images.yaga.co.za/5h9mlhn6pio/bd0b65.jpeg?s=1200&c=inside&f=webp",
+    buyUrl: "https://www.yaga.co.za/orieukwu-richard/product/5h9mlhn6pio/buy",
+    description: "iPad Pro 12.9 3rd Gen Wi-Fi Only 256GB Charger included",
+    specs: ["Charger included", "Accessories included", "Tested device", "Ready to use"]
   },
   {
-    id: "iphone-green",
-    name: "iPhone Green Edition",
-    category: "iPhone",
+    id: "iPad-9th Generation-WiFi + Cellular",
+    name: "iPad 9th Gen",
+    category: "ipad",
     price: 5500,
-    image: "images/products/iphone-green.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
-    description: "Compact iPhone with a clean finish and everyday performance.",
-    specs: ["Unlocked", "Quality checked", "Good screen condition", "Charging tested"]
+    image: "https://images.yaga.co.za/gnedajjgitk/93a0ed.jpeg?s=1200&c=inside&f=webp",
+    buyUrl: "https://www.yaga.co.za/orieukwu-richard/product/gnedajjgitk/buy",
+    description: "WiFi + Cellular 256GB",
+    specs: ["Box and charger included", "Quality checked", "WiFi + Cellular", "Charging tested"]
   },
   {
     id: "macbook-blue-wallpaper",

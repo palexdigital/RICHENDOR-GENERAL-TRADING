@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Richendor General Trading | Apple Products Store</title>
+    <meta name="description" content="Richendor General Trading is an online store for Apple products including iPhone, Mac, iPad, Watch, AirPods, and accessories.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="global-header" aria-label="Main navigation">
+      <nav class="nav-shell">
+        <a class="brand" href="#home" aria-label="Richendor General Trading home">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span>Richendor</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="primary-nav">
+          <a href="#store">Store</a>
+          <a href="#featured">Featured</a>
+          <a href="#support">Support</a>
+          <button class="icon-button" type="button" data-open-search aria-label="Search products">
+            <span aria-hidden="true">⌕</span>
+          </button>
+          <button class="bag-button" type="button" data-open-cart aria-label="Open cart">
+            <span aria-hidden="true">Bag</span>
+            <strong data-cart-count>0</strong>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero-band" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Richendor General Trading</p>
+          <h1 id="hero-title">Apple essentials. Delivered simply.</h1>
+          <p class="hero-copy">Shop iPhone, Mac, iPad, Watch, AirPods, and accessories from a clean online store built for quick edits on GitHub.</p>
+          <div class="hero-actions">
+            <a class="pill-button" href="#store">Shop products</a>
+            <a class="text-link light" href="#featured">See featured ›</a>
+          </div>
+          <img class="hero-image" src="images/hero-apple-products.svg" alt="Apple product lineup with phone, laptop, tablet, watch, and earbuds">
+        </div>
+      </section>
+
+      <section class="sub-nav" aria-label="Store sections">
+        <div class="sub-nav-shell">
+          <strong>Richendor Store</strong>
+          <div>
+            <a href="#store">Products</a>
+            <a href="#deals">Deals</a>
+            <a href="#support">Support</a>
+            <button class="pill-button small" type="button" data-open-cart>Buy</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="store-section" id="store" aria-labelledby="store-title">
+        <div class="section-heading">
+          <p class="eyebrow dark">Online Store</p>
+          <h2 id="store-title">Choose your next Apple product.</h2>
+          <p>Search, filter, add to cart, adjust quantities, and place a demo order. Product data lives in <code>js/app.js</code> for easy GitHub editing.</p>
+        </div>
+
+        <div class="toolbar" role="search">
+          <label class="search-field">
+            <span>Search</span>
+            <input type="search" id="searchInput" placeholder="Search iPhone, MacBook, AirPods...">
+          </label>
+          <label class="select-field">
+            <span>Category</span>
+            <select id="categoryFilter">
+              <option value="all">All products</option>
+            </select>
+          </label>
+          <label class="select-field">
+            <span>Sort</span>
+            <select id="sortFilter">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="feature-band" id="featured" aria-labelledby="featured-title">
+        <div class="feature-card">
+          <div>
+            <p class="eyebrow dark">Featured</p>
+            <h2 id="featured-title">Set up for work, study, and everyday life.</h2>
+            <p>Richendor keeps the shopping path clear: product cards, color choices, saved cart, checkout details, and order confirmation without a heavy framework.</p>
+          </div>
+          <img src="images/macbook-pro.svg" alt="MacBook Pro product illustration">
+        </div>
+      </section>
+
+      <section class="deals-section" id="deals" aria-labelledby="deals-title">
+        <div class="content-card">
+          <h2 id="deals-title">Bundle-ready shopping.</h2>
+          <p>Add multiple devices and accessories to the bag, review totals, and complete a demo checkout. Delivery and warranty notes can be edited directly in the HTML.</p>
+          <div class="benefit-grid">
+            <article>
+              <strong>Fast local delivery</strong>
+              <span>Delivery estimates are shown at checkout.</span>
+            </article>
+            <article>
+              <strong>Secure checkout flow</strong>
+              <span>Client-side validation guides each required field.</span>
+            </article>
+            <article>
+              <strong>Easy product updates</strong>
+              <span>Change names, prices, images, and stock from one JS file.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="support-section" id="support" aria-labelledby="support-title">
+        <div class="section-heading compact">
+          <p class="eyebrow dark">Support</p>
+          <h2 id="support-title">Need help choosing?</h2>
+          <p>Email <a class="text-link" href="mailto:sales@richendor.example">sales@richendor.example</a> or call <a class="text-link" href="tel:+27000000000">+27 00 000 0000</a>. Replace these details with the business contacts before publishing.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" data-cart-panel aria-hidden="true" aria-label="Shopping cart">
+      <div class="cart-overlay" data-close-cart></div>
+      <section class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+        <header>
+          <h2 id="cartTitle">Your bag</h2>
+          <button class="icon-button" type="button" data-close-cart aria-label="Close cart">×</button>
+        </header>
+        <div class="cart-items" data-cart-items></div>
+        <div class="cart-summary">
+          <div><span>Subtotal</span><strong data-subtotal>R0</strong></div>
+          <div><span>Delivery</span><strong data-delivery>R0</strong></div>
+          <div class="total"><span>Total</span><strong data-total>R0</strong></div>
+          <button class="pill-button full" type="button" data-checkout-button>Checkout</button>
+        </div>
+      </section>
+    </aside>
+
+    <dialog class="product-dialog" data-product-dialog>
+      <button class="icon-button dialog-close" type="button" data-close-product aria-label="Close product details">×</button>
+      <div data-product-detail></div>
+    </dialog>
+
+    <dialog class="checkout-dialog" data-checkout-dialog>
+      <button class="icon-button dialog-close" type="button" data-close-checkout aria-label="Close checkout">×</button>
+      <form class="checkout-form" data-checkout-form>
+        <div>
+          <p class="eyebrow dark">Checkout</p>
+          <h2>Complete your order.</h2>
+          <p class="form-note">This demo stores no payment information. Connect your preferred payment provider when the site goes live.</p>
+        </div>
+        <label>Full name <input name="name" autocomplete="name" required></label>
+        <label>Email <input type="email" name="email" autocomplete="email" required></label>
+        <label>Phone <input name="phone" autocomplete="tel" required></label>
+        <label>Delivery address <textarea name="address" rows="3" required></textarea></label>
+        <label>Payment option
+          <select name="payment" required>
+            <option value="">Choose payment option</option>
+            <option>Card payment on delivery</option>
+            <option>Electronic funds transfer</option>
+            <option>Store collection payment</option>
+          </select>
+        </label>
+        <div class="checkout-total">
+          <span>Order total</span>
+          <strong data-checkout-total>R0</strong>
+        </div>
+        <button class="pill-button full" type="submit">Place demo order</button>
+        <p class="order-message" data-order-message role="status"></p>
+      </form>
+    </dialog>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Richendor General Trading</strong>
+        <p>Apple, iPhone, Mac, iPad, Apple Watch, and AirPods are trademarks of Apple Inc. This storefront is an independent demo template and should be connected to real inventory, payment, and shipping services before production use.</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

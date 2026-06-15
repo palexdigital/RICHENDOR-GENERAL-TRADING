@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-label="AirPods Pro">
-  <rect width="360" height="360" fill="none"/>
-  <path d="M108 78c34 0 57 24 57 61v79c0 21-17 38-38 38s-38-17-38-38V97c0-10 8-19 19-19z" fill="#fff" stroke="#e8e8ed"/>
-  <path d="M252 78c-34 0-57 24-57 61v79c0 21 17 38 38 38s38-17 38-38V97c0-10-8-19-19-19z" fill="#fff" stroke="#e8e8ed"/>
-  <path d="M126 96c18 3 28 18 28 42" fill="none" stroke="#dedfe2" stroke-width="10" stroke-linecap="round"/>
-  <path d="M234 96c-18 3-28 18-28 42" fill="none" stroke="#dedfe2" stroke-width="10" stroke-linecap="round"/>
-  <rect x="102" y="238" width="156" height="70" rx="28" fill="#fff" stroke="#e8e8ed"/>
-  <path d="M142 266h76" stroke="#dedfe2" stroke-width="6" stroke-linecap="round"/>
-</svg>

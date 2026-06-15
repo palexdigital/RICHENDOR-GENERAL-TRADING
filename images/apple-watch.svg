@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-label="Apple Watch">
+  <rect width="360" height="360" fill="none"/>
+  <path d="M135 48c10-28 80-28 90 0l10 68H125z" fill="#e8e8ed"/>
+  <path d="M125 244h110l-10 68c-10 28-80 28-90 0z" fill="#e8e8ed"/>
+  <rect x="108" y="96" width="144" height="168" rx="42" fill="#111"/>
+  <rect x="124" y="112" width="112" height="136" rx="30" fill="#f5f5f7"/>
+  <circle cx="180" cy="180" r="38" fill="#d8e9e5"/>
+  <path d="M180 142v38l28 18" fill="none" stroke="#1d1d1f" stroke-width="8" stroke-linecap="round"/>
+</svg>

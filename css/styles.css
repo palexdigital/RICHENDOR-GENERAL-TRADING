@@ -222,6 +222,16 @@ img {
   font-size: var(--text-caption);
 }
 
+.pill-button.muted {
+  color: var(--color-brand);
+  background: var(--color-pure-white);
+}
+
+.pill-button.disabled {
+  pointer-events: none;
+  opacity: 0.45;
+}
+
 .text-link,
 .ghost-button {
   color: var(--color-brand);
@@ -310,8 +320,13 @@ img {
 
 .product-media {
   position: relative;
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 0;
   aspect-ratio: 1;
   background: #f1f1f1;
+  cursor: pointer;
 }
 
 .product-media img {
@@ -533,6 +548,24 @@ img {
   cursor: pointer;
 }
 
+.cart-footer {
+  padding-top: 18px;
+  border-top: 1px solid var(--color-silver);
+}
+
+.cart-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: var(--text-body-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.cart-purchase {
+  width: 100%;
+}
+
 dialog {
   width: min(760px, calc(100% - 32px));
   border: 0;
@@ -566,6 +599,32 @@ dialog::backdrop {
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: var(--radius-cards);
+}
+
+.gallery {
+  display: grid;
+  gap: 12px;
+}
+
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--color-fog);
+  font-size: var(--text-body-sm);
+}
+
+.gallery-controls button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-silver);
+  border-radius: 50%;
+  color: var(--color-brand);
+  background: var(--color-pure-white);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .product-detail h2 {

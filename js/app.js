@@ -1,11 +1,46 @@
+const storeLinks = {
+  yagaStore: "https://www.yaga.co.za/richendor-general-trading",
+  contact: "https://www.yaga.co.za/my/messages/orieukwu-richard",
+  defaultContact: "#contact-link-to-edit",
+  purchase: "https://www.yaga.co.za/orieukwu-richard"
+};
+
+const imageLibrary = {
+  ipad: [
+    "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=900&q=80"
+  ],
+  iphone: [
+    "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=900&q=80"
+  ],
+  macbook: [
+    "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=900&q=80"
+  ],
+  airpods: [
+    "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1610438235354-a6ae5528385c?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?auto=format&fit=crop&w=900&q=80"
+  ],
+  accessories: [
+    "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=900&q=80"
+  ]
+};
+
 const products = [
   {
     id: "ipad-9th-gen-blue",
     name: "iPad 9th Gen 64GB Wi-Fi",
     category: "iPad",
     price: 5500,
-    image: "images/products/ipad-blue.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.ipad,
+    buyUrl: storeLinks.yagaStore,
     description: "Clean iPad with a bright display, ideal for study, streaming, and daily use.",
     specs: ["64GB storage", "Wi-Fi model", "Good battery health", "Ready for setup"]
   },
@@ -14,8 +49,8 @@ const products = [
     name: "iPhone Boxed Bundle",
     category: "iPhone",
     price: 9500,
-    image: "images/products/iphone-boxed.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.iphone,
+    buyUrl: storeLinks.yagaStore,
     description: "iPhone package with accessories, presented in excellent condition.",
     specs: ["Box included", "Accessories included", "Tested device", "Ready to use"]
   },
@@ -24,8 +59,8 @@ const products = [
     name: "iPhone Green Edition",
     category: "iPhone",
     price: 5500,
-    image: "images/products/iphone-green.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.iphone,
+    buyUrl: storeLinks.yagaStore,
     description: "Compact iPhone with a clean finish and everyday performance.",
     specs: ["Unlocked", "Quality checked", "Good screen condition", "Charging tested"]
   },
@@ -34,8 +69,8 @@ const products = [
     name: "MacBook Pro 13-inch",
     category: "MacBook",
     price: 9500,
-    image: "images/products/macbook-blue.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.macbook,
+    buyUrl: storeLinks.yagaStore,
     description: "Reliable MacBook for school, business, and creative everyday work.",
     specs: ["13-inch display", "macOS ready", "Charger available", "Performance tested"]
   },
@@ -44,8 +79,8 @@ const products = [
     name: "iPhone With Accessories",
     category: "iPhone",
     price: 12000,
-    image: "images/products/iphone-remote.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.iphone,
+    buyUrl: storeLinks.yagaStore,
     description: "Premium iPhone package with accessories for a complete setup.",
     specs: ["Accessories included", "Unlocked", "Inspected condition", "Ready for collection"]
   },
@@ -54,8 +89,8 @@ const products = [
     name: "Apple AirTag Set",
     category: "Accessories",
     price: 1200,
-    image: "images/products/airtag-set.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.accessories,
+    buyUrl: storeLinks.yagaStore,
     description: "Apple tracking accessories for bags, keys, and everyday essentials.",
     specs: ["Compact tracker", "Apple Find My support", "Easy setup", "Portable accessory"]
   },
@@ -63,9 +98,9 @@ const products = [
     id: "macbook-stage-light",
     name: "MacBook Air Bundle",
     category: "MacBook",
-    price: 10500,
-    image: "images/products/macbook-stage.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+        price: 10500,
+    images: imageLibrary.macbook,
+    buyUrl: storeLinks.yagaStore,
     description: "Slim MacBook option for work, browsing, email, and study.",
     specs: ["Lightweight body", "macOS ready", "Keyboard tested", "Charger available"]
   },
@@ -74,8 +109,8 @@ const products = [
     name: "iPhone Boxed Deal",
     category: "iPhone",
     price: 9500,
-    image: "images/products/iphone-box.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.iphone,
+    buyUrl: storeLinks.yagaStore,
     description: "Boxed iPhone deal with a clean display and smooth performance.",
     specs: ["Box included", "Screen checked", "Battery checked", "Network ready"]
   },
@@ -84,8 +119,8 @@ const products = [
     name: "iPad With Keyboard Case",
     category: "iPad",
     price: 3500,
-    image: "images/products/ipad-keyboard.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.ipad,
+    buyUrl: storeLinks.yagaStore,
     description: "iPad setup with a keyboard case for notes, work, and browsing.",
     specs: ["Keyboard case", "Touch display", "Wi-Fi model", "Portable setup"]
   },
@@ -94,8 +129,8 @@ const products = [
     name: "MacBook Space Gray",
     category: "MacBook",
     price: 9500,
-    image: "images/products/macbook-space-gray.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.macbook,
+    buyUrl: storeLinks.yagaStore,
     description: "Space gray MacBook in a practical everyday configuration.",
     specs: ["Space gray finish", "Charger available", "macOS ready", "Good working condition"]
   },
@@ -104,8 +139,8 @@ const products = [
     name: "iPhone Red",
     category: "iPhone",
     price: 2500,
-    image: "images/products/iphone-red.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.iphone,
+    buyUrl: storeLinks.yagaStore,
     description: "Affordable iPhone with a bold red finish and essential features.",
     specs: ["Unlocked", "Charging tested", "Camera tested", "Great value option"]
   },
@@ -114,8 +149,8 @@ const products = [
     name: "AirPods With Box",
     category: "AirPods",
     price: 450,
-    image: "images/products/airpods-box.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.airpods,
+    buyUrl: storeLinks.yagaStore,
     description: "Compact Apple audio accessory for music, calls, and daily use.",
     specs: ["Charging case", "Portable design", "Audio tested", "Box shown"]
   },
@@ -124,8 +159,8 @@ const products = [
     name: "iPad Mini",
     category: "iPad",
     price: 2900,
-    image: "images/products/ipad-mini.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.ipad,
+    buyUrl: storeLinks.yagaStore,
     description: "Small iPad form factor for travel, reading, video, and notes.",
     specs: ["Compact size", "Wi-Fi model", "Touch display", "Easy to carry"]
   },
@@ -134,8 +169,8 @@ const products = [
     name: "iPad Silver",
     category: "iPad",
     price: 5500,
-    image: "images/products/ipad-silver.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.ipad,
+    buyUrl: storeLinks.yagaStore,
     description: "Silver iPad with a clean look and reliable everyday usability.",
     specs: ["Silver finish", "Wi-Fi model", "Display tested", "Ready to use"]
   },
@@ -144,8 +179,8 @@ const products = [
     name: "Apple Pencil",
     category: "Accessories",
     price: 1100,
-    image: "images/products/apple-pencil.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.accessories,
+    buyUrl: storeLinks.yagaStore,
     description: "Apple Pencil accessory for drawing, notes, marking up, and design work.",
     specs: ["Apple Pencil", "Clean condition", "Great for iPad", "Portable accessory"]
   },
@@ -154,8 +189,8 @@ const products = [
     name: "iPhone App Setup",
     category: "iPhone",
     price: 5900,
-    image: "images/products/iphone-apps.jpg",
-    buyUrl: "https://www.yaga.co.za/richendor-general-trading",
+    images: imageLibrary.iphone,
+    buyUrl: storeLinks.yagaStore,
     description: "iPhone shown with apps installed, ready for everyday communication.",
     specs: ["Unlocked", "Apps ready", "Screen checked", "Battery checked"]
   }
@@ -163,7 +198,7 @@ const products = [
 
 const currency = new Intl.NumberFormat("en-ZA", {
   style: "currency",
-  currency: "ZAR",
+ currency: "ZAR",
   maximumFractionDigits: 0
 });
 
@@ -171,7 +206,9 @@ const state = {
   cart: JSON.parse(localStorage.getItem("richendorCart") || "[]"),
   search: "",
   category: "all",
-  sort: "featured"
+  sort: "featured",
+  activeProductId: null,
+  activeImageIndex: 0
 };
 
 const productGrid = document.querySelector("#productGrid");
@@ -180,6 +217,8 @@ const searchInput = document.querySelector("#searchInput");
 const sortFilter = document.querySelector("#sortFilter");
 const cartPanel = document.querySelector("[data-cart-panel]");
 const cartItems = document.querySelector("[data-cart-items]");
+const cartTotal = document.querySelector("[data-cart-total]");
+const purchaseButton = document.querySelector("[data-purchase-button]");
 const productDialog = document.querySelector("[data-product-dialog]");
 const productDetail = document.querySelector("[data-product-detail]");
 
@@ -191,8 +230,19 @@ function formatPrice(value) {
   return currency.format(value).replace("ZAR", "R");
 }
 
+function primaryImage(product) {
+  return product.images[0];
+}
+
 function getCartProduct(item) {
   return products.find((product) => product.id === item.id);
+}
+
+function cartTotalValue() {
+  return state.cart.reduce((total, item) => {
+    const product = getCartProduct(item);
+    return product ? total + product.price : total;
+  }, 0);
 }
 
 function renderCategories() {
@@ -226,17 +276,17 @@ function renderProducts() {
 
   productGrid.innerHTML = visibleProducts.map((product) => `
     <article class="product-card">
-      <div class="product-media">
-        <img src="${product.image}" alt="${product.name}">
-        <span class="save-dot" aria-hidden="true">♡</span>
-      </div>
+      <button class="product-media" type="button" data-view-product="${product.id}" aria-label="View ${product.name} photos">
+        <img src="${primaryImage(product)}" alt="${product.name}">
+        <span class="save-dot" aria-hidden="true">&#9825;</span>
+      </button>
       <div class="product-copy">
         <h3>${product.name}</h3>
         <p>${product.category}</p>
         <strong class="product-price">${formatPrice(product.price)}</strong>
         <div class="product-actions">
           <button class="pill-button small" type="button" data-add-to-cart="${product.id}">Add to bag</button>
-          <a class="pill-button small" href="${product.buyUrl}" target="_blank" rel="noopener">Buy</a>
+          <a class="pill-button small" href="${product.buyUrl}">Buy</a>
           <button class="ghost-button" type="button" data-view-product="${product.id}">Details</button>
         </div>
       </div>
@@ -248,7 +298,7 @@ function renderCart() {
   const count = state.cart.length;
   document.querySelectorAll("[data-cart-count]").forEach((item) => {
     item.textContent = count;
-  });
+    });
 
   if (!state.cart.length) {
     cartItems.innerHTML = '<div class="empty-state"><h3>Your bag is empty.</h3><p>Pick products from the store grid.</p></div>';
@@ -258,18 +308,21 @@ function renderCart() {
       if (!product) return "";
       return `
         <article class="cart-item">
-          <img src="${product.image}" alt="${product.name}">
+          <img src="${primaryImage(product)}" alt="${product.name}">
           <div>
             <h3>${product.name}</h3>
             <p>${formatPrice(product.price)}</p>
-            <a href="${product.buyUrl}" target="_blank" rel="noopener">Buy item</a>
+            <a href="${product.buyUrl}">Buy item</a>
           </div>
-          <button class="remove-x" type="button" data-remove="${product.id}" aria-label="Remove ${product.name}">×</button>
+          <button class="remove-x" type="button" data-remove="${product.id}" aria-label="Remove ${product.name}">&times;</button>
         </article>
       `;
     }).join("");
   }
 
+  cartTotal.textContent = formatPrice(cartTotalValue());
+  purchaseButton.href = storeLinks.purchase;
+  purchaseButton.classList.toggle("disabled", !state.cart.length);
   saveCart();
 }
 
@@ -293,12 +346,28 @@ function closeCart() {
   document.body.classList.remove("cart-open");
 }
 
-function showProduct(id) {
+function changeProductImage(amount) {
+  const product = products.find((item) => item.id === state.activeProductId);
+  if (!product) return;
+  state.activeImageIndex = (state.activeImageIndex + amount + product.images.length) % product.images.length;
+  showProduct(product.id, state.activeImageIndex);
+}
+
+function showProduct(id, imageIndex = 0) {
   const product = products.find((item) => item.id === id);
   if (!product) return;
+  state.activeProductId = id;
+  state.activeImageIndex = imageIndex;
   productDetail.innerHTML = `
     <article class="product-detail">
-      <img src="${product.image}" alt="${product.name}">
+      <div class="gallery">
+        <img src="${product.images[imageIndex]}" alt="${product.name}">
+        <div class="gallery-controls">
+          <button type="button" data-gallery-prev aria-label="Previous photo">&#8249;</button>
+          <span>${imageIndex + 1} / ${product.images.length}</span>
+          <button type="button" data-gallery-next aria-label="Next photo">&#8250;</button>
+        </div>
+      </div>
       <div>
         <p class="eyebrow dark">${product.category}</p>
         <h2>${product.name}</h2>
@@ -309,12 +378,12 @@ function showProduct(id) {
         <strong class="product-price">${formatPrice(product.price)}</strong>
         <div class="product-actions">
           <button class="pill-button" type="button" data-add-to-cart="${product.id}">Add to bag</button>
-          <a class="pill-button" href="${product.buyUrl}" target="_blank" rel="noopener">Buy item</a>
+          <a class="pill-button" href="${product.buyUrl}">Buy item</a>
         </div>
       </div>
     </article>
   `;
-  productDialog.showModal();
+  if (!productDialog.open) productDialog.showModal();
   document.body.classList.add("dialog-open");
 }
 
@@ -327,9 +396,13 @@ document.addEventListener("click", (event) => {
   const addButton = event.target.closest("[data-add-to-cart]");
   const viewButton = event.target.closest("[data-view-product]");
   const removeButton = event.target.closest("[data-remove]");
+  const previousButton = event.target.closest("[data-gallery-prev]");
+  const nextButton = event.target.closest("[data-gallery-next]");
 
-  if (addButton) addToCart(addButton.dataset.addToCart);
+if (addButton) addToCart(addButton.dataset.addToCart);
   if (viewButton) showProduct(viewButton.dataset.viewProduct);
+  if (previousButton) changeProductImage(-1);
+  if (nextButton) changeProductImage(1);
   if (removeButton) {
     state.cart = state.cart.filter((item) => item.id !== removeButton.dataset.remove);
     renderCart();
@@ -375,4 +448,4 @@ document.addEventListener("keydown", (event) => {
 
 renderCategories();
 renderProducts();
-renderCart();
+renderCart();                          

@@ -1,21 +1,16 @@
 :root {
-  /* Requested Base & Premium Complementary Palette */
-  --color-bg-pink: #f0c2ec;         /* Your custom background */
-  --color-brand: #4a1235;          /* Rich Luxury Plum Accent */
-  --color-brand-hover: #6e1d50;    /* Vibrant Berry interactive accent */
-  --color-space-black: #210718;    /* Dark off-black with a warm undertone */
-  --color-slate: #3b1e31;          /* Deep deep mauve */
-  --color-gunmetal: #573a4b;       /* Muted berry shadow */
-  --color-fog: #785a6c;            /* Elegant dark rose grey for text */
-  --color-pure-white: #ffffff;     /* Crisp white crisp pop */
-  --color-mist: #faf2f8;           /* Super soft tint for structural cards */
-  --color-silver: #e6cbdc;         /* Soft boundary line border accent */
-  --color-cloud: #ebd2e2;          /* Secondary interactive boundary */
-
-  /* Serif fallback fonts to make cosmetics feel high fashion */
-  --font-sf-pro-text: "SF Pro Text", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Didot", "Playfair Display", serif;
-  --font-sf-pro-display: "SF Pro Display", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Didot", "Playfair Display", serif;
-  
+  --color-brand: #46484f;
+  --color-link-blue: #46484f;
+  --color-space-black: #1d1d1f;
+  --color-slate: #313131;
+  --color-gunmetal: #444545;
+  --color-fog: #6b6c6c;
+  --color-pure-white: #ffffff;
+  --color-mist: #f6f6f6;
+  --color-silver: #e8e8ed;
+  --color-cloud: #dedfe2;
+  --font-sf-pro-text: "SF Pro Text", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sf-pro-display: "SF Pro Display", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --text-caption: 12px;
   --leading-caption: 1.33;
   --text-body-sm: 14px;
@@ -34,8 +29,8 @@
   --section-gap: 72px;
   --card-padding: 40px;
   --radius-nav: 12px;
-  --radius-cards: 20px;
-  --radius-inputs: 8px;
+  --radius-cards: 8px;
+  --radius-inputs: 12px;
   --radius-buttons: 980px;
-  --shadow-subtle: rgba(74, 18, 53, 0.08) 0px 8px 24px 0px;
+  --shadow-subtle: rgba(0, 0, 0, 0.11) 0px 0px 1px 0px inset;
 }
